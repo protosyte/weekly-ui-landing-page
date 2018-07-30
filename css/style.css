@@ -10,27 +10,41 @@ a {
 }
 
 main {
-    max-width:980px;
+    max-width:940px;
     margin:0 auto;
     background:#ffffff;
     flex-direction:row-reverse;
-    padding: 2em;
     color: #8c8787;
     font-family: 'Roboto', sans-serif;
+    -webkit-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.33);
+    -moz-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.33);
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.33);
 }
 
-h1 {
-    margin-top:4.375rem;
+#l_section {
+}
+
+#l_section img.brand {
+	margin:2rem 0 0 2rem;
+}
+
+#l_section h1 {
+    margin:2rem 0 0 2rem;
     font-size:1.5rem;
 }
 
-h1 span.brand-name {
+#l_section h1 span.brand-name {
     color:#000000;
 }
 
-main p {
+#l_section p {
     font-size:  1.25rem;
-    margin-bottom:3rem;
+    margin:0 0 2rem 2rem;
+}
+
+#l_section fieldset {
+	border: 0px;
+	margin:0 2rem;
 }
 
 .input-group {
@@ -52,12 +66,11 @@ main p {
 }
 
 .input-group:focus-within {
-    border-left:3px solid #f6e122;
+    border-left:4px solid #f6e122;
 }
 
 .form-footer {
-    margin-top:2rem;
-    margin-bottom:3rem;
+    margin:2rem 0 1rem;
     border:0px;
 }
 
@@ -65,8 +78,34 @@ main p {
     text-align:right;
 }
 
+.vc-btn {
+	min-width:6rem;
+	border-radius:1rem;
+	background:#ffffff;
+	border:2px solid #100F0B;
+	color:#100F0B;
+}
+
+.vc-btn:hover {
+	background:inherit;
+}
+
+.vc-btn.pure-button-primary {
+	background: #100F0B;
+	color:#ffffff;
+}
+
+#l_section p.toc-notice {
+	font-size:0.8rem;
+}
+
+#r_section {
+	background:url('../img/bg.jpg') no-repeat center;
+	background-size: cover;
+}
+
 @media screen and (min-width: 48em){
     main {
-        margin-top:6em;
+        margin-top:3em;
     }
 }

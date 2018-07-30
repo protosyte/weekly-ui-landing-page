@@ -104,6 +104,24 @@ main {
 	background-size: cover;
 }
 
+.vc-menu {
+	margin-top:1rem;
+	margin-left:0.5rem;
+}
+
+.vc-menu a.pure-menu-link {
+	text-transform:uppercase;
+	color:#ffffff;
+	font-size:0.8rem;
+	border:1px solid transparent;
+}
+
+.vc-menu a.pure-menu-link:hover {
+	background:transparent;
+	border-color:#ffffff;
+	transition:all 0.2s ease-in;
+}
+
 @media screen and (min-width: 48em){
     main {
         margin-top:3em;

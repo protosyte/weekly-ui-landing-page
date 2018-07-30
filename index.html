@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landing page</title>
 
-    <link rel='stylesheet' href='http://unpkg.com/purecss@1.0.0/build/pure-min.css'/>
-    <link rel='stylesheet' href='css/style.css'/>
+	<link rel='stylesheet' href='http://unpkg.com/purecss@1.0.0/build/pure-min.css'/>
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/rids-responive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<!--<![endif]-->
+	<link rel='stylesheet' href='css/style.css'/>
 
 </head>
 
 <body>
     <main class='pure-g'>
 
-        <section id='l_section' class='pure-u-1-2'>
+        <section id='l_section' class='pure-u-1-1 pure-u-md-1-2'>
             <img class='pure-img brand' src="img/logo.png"/>
             <h1>We are <span class='brand-name'>vintage cars</span></h1>
             
@@ -28,7 +34,7 @@
 			<input id="email" type="email">
 		    </div>
 
-		    <div class='input-group'>
+		    <div class='input-group last'>
 			<label for="password">Password</label>
 			<input id="password" type="password" >
 		    </div>
@@ -59,7 +65,7 @@
 	
 	</section>
 
-        <section id='r_section' class='pure-u-1-2'>
+        <section id='r_section' class='pure-u-1-1 pure-u-md-1-2'>
 		<div class="pure-menu pure-menu-horizontal vc-menu">
 		    <ul class="pure-menu-list">
 			<li class="pure-menu-item"><a href="#" class="pure-menu-link">About Us</a></li>

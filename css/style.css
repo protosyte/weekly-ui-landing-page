@@ -10,15 +10,16 @@ a {
 }
 
 main {
-    max-width:940px;
-    margin:0 auto;
+    max-width:960px;
+    margin:3em auto 0;
     background:#ffffff;
-    flex-direction:row-reverse;
+    /*flex-direction:row-reverse;*/
     color: #8c8787;
     font-family: 'Roboto', sans-serif;
     -webkit-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.33);
     -moz-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.33);
     box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.33);
+    position:relative;
 }
 
 #l_section {
@@ -52,6 +53,10 @@ main {
     padding:0.75rem;
     font-size:0.9rem;
     transition-duration: 0.1s
+}
+
+.input-group.last {
+	border-top:0px;
 }
 
 .input-group input[type='email'], .input-group input[type='password'] {
@@ -97,6 +102,7 @@ main {
 
 #l_section p.toc-notice {
 	font-size:0.8rem;
+	margin-right:2rem;
 }
 
 #r_section {
@@ -113,17 +119,21 @@ main {
 	text-transform:uppercase;
 	color:#ffffff;
 	font-size:0.8rem;
-	border:1px solid transparent;
+	border:2px solid transparent;
 }
 
-.vc-menu a.pure-menu-link:hover {
+.vc-menu a.pure-menu-link:hover, .vc-menu a.pure-menu-link:focus {
 	background:transparent;
 	border-color:#ffffff;
 	transition:all 0.2s ease-in;
 }
 
-@media screen and (min-width: 48em){
+@media screen and (max-width: 48em){
     main {
-        margin-top:3em;
+	margin:0;
+	min-height:100vh;
+	min-width:100vw;
+	box-shadow:none;
+	flex-direction:row-reverse !important;
     }
 }
